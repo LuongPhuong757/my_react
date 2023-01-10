@@ -1,0 +1,224 @@
+.input-group-text {
+  width: 100px
+}
+.login {
+  width: 500px;
+  margin: auto;
+}
+body {
+  min-height: 100vh;
+}
+.header {
+  max-height: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 2px 10px #ccc;
+  position: absolute;
+  z-index: 1000000;
+  background-color: white;
+}
+
+.header img {
+  display: block;
+  height: 100%;
+}
+.header-left {
+  height: 100%;
+}
+
+.header-right {
+  height: 100%;
+}
+
+.header-menu {
+  height: 100%;
+}
+.header-menu img {
+  border-radius: 100%;
+  width: 50px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.body-left {
+  flex-basis: 350px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 68px;
+  z-index: 1000;
+  height: calc(100vh - 68px);
+}
+.body-list-rooms {
+  padding: 0px 10px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 4rem;
+  z-index: 1000;
+  height: calc(100vh - 10rem);
+  overflow-y: auto;
+  /* background-color: #55585a; */
+}
+.item-rooms-img {
+  width: 100%;
+  position: sticky;
+  top: 4rem;
+  height: calc(100vh - 4rem);
+}
+
+.item-rooms-img img {
+  width: 100%;
+}
+.body-item-rooms {
+  display: flex;
+}
+.toast {
+  display: block !important;
+  border-radius: 0px;
+  width: 100% !important;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 0px;
+  margin: 10px 0px;
+  background-color: white !important;
+}
+.toast-header {
+  /* border-radius: 5px; */
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+  border-radius: 5px;
+  /* background-color: white !important; */
+  transition: all 0.5s;
+  /* transform: scale(0.8); */
+  border: 0px;
+  /* transform: scale(1.1); */
+}
+.toast-user:hover .toast-header{
+  /* opacity: 0.9; */
+  background-color: rgb(209, 204, 204) !important;
+  /* border-radius: 0px; */
+  transform: scale(1.1);
+
+}
+.toast-header img {
+  height: 30px;
+}
+
+.body-left > div {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  /* width: 100% !important; */
+}
+.body-right {
+  padding: 20px 10px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: sticky;
+  top: 68px;
+  z-index: 1000;
+  height: calc(100vh - 68px);
+  overflow-y: auto;
+}
+.toast-header {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+.body-center {
+  flex-basis: calc(100% - 550px);
+  box-sizing: border-box;
+  position: sticky;
+  top: 68px;
+  z-index: 1000;
+  overflow-y: auto;
+  height: calc(100vh - 66px);
+  /* position: absolute; */
+}
+.body-center-message {
+  flex-direction: column-reverse;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 230px);
+  top: 4rem;
+  padding-bottom: 50px;
+}
+.body-center-from {
+  flex-grow: 3;
+}
+.body-center-to {
+  flex-grow: 3;
+}
+.body-center-time {
+  flex-grow: 2;
+}
+.body-center .card {
+  margin: 5px 0px;
+}
+
+.message {
+  font-size: 16px;
+  display: block;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.message > div {
+  float: left;
+  max-width: 50%;
+  word-wrap: break-word;
+}
+.body-center-to {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.body-center-from {
+  display: flex;
+  align-items: flex-end;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
+  background-color: rgb(32, 42, 56) !important;
+  color: white  !important;
+}
+.me-auto {
+  display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
